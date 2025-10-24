@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-color: #95db4f;
+    font-family: 'Poppins';
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 40px;
+    text-decoration: none;
+    transition-duration: 0.4ms;
+  }
+
+  .navbar {
+    transition: all 0.4s ease;
+  } 
+
+  .navbar:not(.scrolled) {
+    backdrop-filter: none;
+  }
+  
+  .navbar.scrolled {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px 5px #205a00a8;
+  }
+
+  .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    padding: 8px 15px;
+    border-radius: 25px;
+  }
+
+  .navbar a:hover {
+    background-color: #346900;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+  .auth-buttons {
+  display: flex;
+  gap: 25px;
+  margin: 0px;
+}
+
+  .auth-buttons .login {
+  color: #8ed94f;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+  .auth-buttons .cadastre-se {
+  font-weight: 800;
+  color: #8ed94f;
+  text-decoration: none;
+}
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 50px;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+  }
+
+  .footer a:hover{
+    color: #000000;
+  }
+
+  .footer li{
+    list-style: none;
+  }
+
+  .footer-right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-right ul {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .footer-left{
+    color: white;
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #205a00,
+     1px -1px 0 #205a00,
+    -1px  1px 0 #205a00,
+     1px  1px 0 #205a00;
+    text-align: center;
+  }
+
+  .footer-left h5{
+    margin: 0%;
+  }
+
+@media (max-width: 600px) {
+
+  .navbar {
+      position: relative;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 20px;
+  }
+
+  .auth-buttons {
+    gap: 10px
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .footer-left img {
+    display: flex;
+    max-height: 80px;
+    max-width: 100%;
+    height: auto;
+  }
+}

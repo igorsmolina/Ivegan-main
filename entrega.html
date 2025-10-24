@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Entrega</title>
+  <!-- font do google -->
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="./css/entrega.css">
+</head>
+
+<body>
+
+
+
+  <div class="navbar">
+    <ul class="nav-links">
+      <li><img src="/img/ivegan_logo-transparent.png" height="25px"></li>
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/sobre.html">Sobre</a></li>
+      <li><a href="/mercado.html">Mercado</a></li>
+      <li><a href="/entrega.html">Entrega</a></li>
+      <li><a href="/pedidos.html">Pedidos</a></li>
+    </ul>
+    <!--login-->
+    <div class="auth-buttons">
+      <ul class="nav-links">
+        <a href="/login.html" class="login">login</a>
+        <a href="/registro.html" class="cadastre-se">Entrar</a>
+      </ul>
+    </div>
+  </div>
+
+  <header>Ivegan Maps — Simule sua Entrega</header>
+
+  <div class="container">
+    <div class="formulario">
+      <label><b>Endereço de Origem:</b></label>
+      <input type="text" id="origem" placeholder="Ex: Rua das Flores, Curitiba, PR">
+
+      <label><b>Endereço de Destino:</b></label>
+      <input type="text" id="destino" placeholder="Ex: Avenida Paulista, São Paulo, SP">
+
+      <button onclick="gerarRota()">Mostrar Rota</button>
+    </div>
+
+    <div id="map"></div>
+  </div>
+
+  <!-- Script externo -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
