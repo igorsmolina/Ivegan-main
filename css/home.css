@@ -62,6 +62,20 @@
     cursor: pointer;
   }
 
+    .card-mercado-left button:hover {
+    background-color: #39a300;
+    border-style: none;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+
   .card-mercado-left h1{
     padding: 10px;
     margin: 0%;
@@ -128,6 +142,21 @@
     align-items: center;
     cursor: pointer;
   }
+
+    .card-entrega-right button:hover {
+    background-color: #9b1515;
+    border-style: none;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+
 
   .card-entrega-right h1{
     padding: 10px;
